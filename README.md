@@ -1,12 +1,10 @@
-<h1 style="text-align: center">OOP Labsheet 1 </h1>
+# Lab1
 
-<br/>
+OOP Labsheet 1\
 
-<p style="text-align: right">Prof. Dipanjan Chakrobarty </p>
 
-<br/>
 
-### Write your first JAVA program.
+## Write your first JAVA program.
 
 ```java
 class Hello {
@@ -17,7 +15,7 @@ class Hello {
 }
 ```
 
-#### Compilation:
+**Compilation:**
 
 Compile your code through terminal by writing
 
@@ -31,7 +29,7 @@ In this case:
 javac Hello.java
 ```
 
-#### Execution:
+**Execution:**
 
 Execute your code through terminal by writing
 
@@ -45,25 +43,26 @@ In this case:
 java Hello
 ```
 
-#### Output:
+**Output:**
 
 ```
 Hello world. I can write Java!
 ```
 
-<br>
+\
 
-After your code is compiled you will find a file with the same named as the program file but with the extension **.class**.<br>
+
+After your code is compiled you will find a file with the same named as the program file but with the extension **.class**.\
 A Java class file is a file containing Java bytecode and having .class extension that can be executed by JVM (Java Virtual Machine). A Java class file is created by a Java compiler from .java files as a result of successful compilation.
 
-### Java Class and Structure
+#### Java Class and Structure
 
-#### Class:
+**Class:**
 
-The Class is the basic unit of Object Oriented Programming.<br>
+The Class is the basic unit of Object Oriented Programming.\
 The Class forms the basis for object oriented programming in Java.
 
-#### General Syntax of Class:
+**General Syntax of Class:**
 
 ```java
 class classname
@@ -86,7 +85,7 @@ Two components of Java Class:
 1. Atrributes - Variables
 2. Methods - Functions
 
-#### Example:
+**Example:**
 
 ```java
 class Square {
@@ -121,24 +120,24 @@ To access methods of an object
 mySquare.printSquare(10);
 ```
 
-#### Syntax Guidelines
+**Syntax Guidelines**
 
 1. Every line of code that runs in Java must be inside a `class`
 2. A class should always start with an uppercase first letter.
 3. The name of the java file must match the class name.
 4. The `main()` method is required and you will see it in every Java program. Any code inside the `main()` method will be executed.
 
-### Java Identifiers
+#### Java Identifiers
 
 All Java variables must be identified with unique names called identifiers.
 
-#### Declaring (Creating) Variables:
+**Declaring (Creating) Variables:**
 
 ```java
 type variableName = value;
 ```
 
-#### Types of Java Literals:
+**Types of Java Literals:**
 
 1. `String` - Stores text
 2. `int` - Stores integers (whole numbers)
@@ -146,18 +145,18 @@ type variableName = value;
 4. `char` - Stores single characters
 5. `boolean` - Stores true or false
 
-#### Variable Name Guidelines
+**Variable Name Guidelines**
 
-- Names can contain letters, digits, underscores, and dollar signs
-- Names must begin with a letter
-- Names should start with a lowercase letter and it cannot contain whitespace
-- Names can also begin with $ and \_
-- Names are case sensitive
-- Reserved words (keywords) cannot be used as names
+* Names can contain letters, digits, underscores, and dollar signs
+* Names must begin with a letter
+* Names should start with a lowercase letter and it cannot contain whitespace
+* Names can also begin with $ and \_
+* Names are case sensitive
+* Reserved words (keywords) cannot be used as names
 
-### Java Conditional Statements
+#### Java Conditional Statements
 
-- `if`
+* `if`
 
 ```java
 if (condition) {
@@ -165,7 +164,7 @@ if (condition) {
 }
 ```
 
-- `else`
+* `else`
 
 ```java
 if (condition) {
@@ -175,7 +174,7 @@ if (condition) {
 }
 ```
 
-- `else if`
+* `else if`
 
 ```java
 if (condition1) {
@@ -187,7 +186,7 @@ if (condition1) {
 }
 ```
 
-- `switch`
+* `switch`
 
 ```java
 switch(expression) {
@@ -202,15 +201,15 @@ switch(expression) {
 }
 ```
 
-#### Shortcut for if-else
+**Shortcut for if-else**
 
 ```java
 variable = (condition) ? expressionTrue :  expressionFalse;
 ```
 
-### Java Loops
+#### Java Loops
 
-#### while loop
+**while loop**
 
 ```java
 while (condition) {
@@ -218,7 +217,7 @@ while (condition) {
 }
 ```
 
-#### do-while loop
+**do-while loop**
 
 ```java
 do {
@@ -227,7 +226,7 @@ do {
 while (condition);
 ```
 
-#### for loop
+**for loop**
 
 ```java
 for (initialization; condition; iteration) {
@@ -235,7 +234,7 @@ for (initialization; condition; iteration) {
 }
 ```
 
-#### for-each loop (can be used for iterating)
+**for-each loop (can be used for iterating)**
 
 ```java
 for (type variableName : arrayName) {
@@ -243,7 +242,7 @@ for (type variableName : arrayName) {
 }
 ```
 
-### Java Data Types
+#### Java Data Types
 
 | Data Type | Size/Format   | Description                          |
 | --------- | ------------- | ------------------------------------ |
@@ -256,9 +255,9 @@ for (type variableName : arrayName) {
 | char      | 16-bit        | Unicode character A single character |
 | boolean   | true or false | A boolean value (true or false)      |
 
-### Array
+#### Array
 
-#### Declaring an array
+**Declaring an array**
 
 ```java
 elementDataType[] arrayName = new elementDataType[arraySize];
@@ -275,7 +274,7 @@ int[] firstArray = new int[10];
 int[] firstArray = {0,1,2,3,4,5,6,7,8,9};
 ```
 
-#### Declaring a 2D array
+**Declaring a 2D array**
 
 ```java
 elementDataType[][] arrayName = new elementDataType[rowSize][colSize];
@@ -292,7 +291,7 @@ int[][] firstTwoDArray = new int[10][20];
 int[][] firstTwoDArray = {{0,1,2},{3,4,5},{6,7,8}};
 ```
 
-### Taking input from user
+#### Taking input from user
 
 The Scanner class is used to get user input, and it is found in the java.util package.
 
@@ -323,42 +322,42 @@ class UserInput {
 }
 ```
 
-## Exercise Problems:
+### Exercise Problems:
 
-### Exercise 1
+#### Exercise 1
 
 What happens when we declare multiple classes in the same file and then use javac to compile the file and the file name is any one of the declared classes?
 
-### Exercise 2
+#### Exercise 2
 
-Write a Java program to compute the final amount a person has to repay for a loan of 10 years with interest rate of 5% per annum. The principal amount is to be taken as input from user and display the final amount.<br>
+Write a Java program to compute the final amount a person has to repay for a loan of 10 years with interest rate of 5% per annum. The principal amount is to be taken as input from user and display the final amount.\
 Use `double` datatype for principal and final amount.
 
-#### Formula:
+**Formula:**
 
 `FinalAmount = PrincipalAmount(1 + (TimePeriodInYears * InterestRate / 100))`
 
-#### Input
+**Input**
 
 A double representing the principal amount
 
-#### Output
+**Output**
 
 A double representing the final amount
 
-#### Sample Test Input
+**Sample Test Input**
 
 ```
 1000.0
 ```
 
-#### Sample Test Output
+**Sample Test Output**
 
 ```
 1500.0
 ```
 
-### Exercise 3
+#### Exercise 3
 
 Write a Java program to print a menu to the user asking to choose between by entering the corresponding option number:
 
@@ -367,23 +366,23 @@ Write a Java program to print a menu to the user asking to choose between by ent
 2. Rectangle
 ```
 
-If `1` (circle) is chosen, take the input of radius (int) and print the area of the circle (take pi = 3.14), otherwise take the input of length (int) and breadth (int) of rectangle and print the area.<br>
+If `1` (circle) is chosen, take the input of radius (int) and print the area of the circle (take pi = 3.14), otherwise take the input of length (int) and breadth (int) of rectangle and print the area.\
 Do this exercise with both if-else and switch statements.
 
-#### Sample Test Input 1
+**Sample Test Input 1**
 
 ```
 1
 10
 ```
 
-#### Sample Test Output 1
+**Sample Test Output 1**
 
 ```
 314.0
 ```
 
-#### Sample Test Input 2
+**Sample Test Input 2**
 
 ```
 2
@@ -391,49 +390,50 @@ Do this exercise with both if-else and switch statements.
 20
 ```
 
-#### Sample Test Output 2
+**Sample Test Output 2**
 
 ```
 1200
 ```
 
-### Exercise 4
+#### Exercise 4
 
 Write a Java program to declare a 2D array of size 4 X 3, then take the input from user such that the array contains following elements:
 
-<pre>
+```
 12   3    4 
 4    34   2
 65   1   56
 76   24   7
-</pre>
+```
 
 After that, using for-each loop find the sum of the whole array and print it.
 
-<p style="text-align: center;">***</p>
+\*\*\*
 
-<h1 style="text-align: center">OOP Labsheet 1 Solutions</h1>
+## OOP Labsheet 1 Solutions
 
-<br/>
+\
 
-## Exercise Problems:
 
-### Exercise 1
+### Exercise Problems:
+
+#### Exercise 1
 
 What happens when we declare multiple classes in the same file and then use javac to compile the file and the file name is any one of the declared classes?
 
-#### Solution
+**Solution**
 
 We get .class file corresponding to all the declared classes in the file. To execute any of the class we can just write java with the corresponding class name.
 
 Example: We declare two classes names `Hello` & `World` and the file is named `Hello.java`, once we compile `javac Hello.java` we get `Hello.class` and `World.class`. After that to execute the classes we can call `java Hello` or `java World`.
 
-### Exercise 2
+#### Exercise 2
 
-Write a Java program to compute the final amount a person has to repay for a loan of 10 years with interest rate of 5% per annum. The principal amount is to be taken as input from user and display the final amount.<br>
+Write a Java program to compute the final amount a person has to repay for a loan of 10 years with interest rate of 5% per annum. The principal amount is to be taken as input from user and display the final amount.\
 Use `double` datatype for principal and final amount.
 
-#### Solution
+**Solution**
 
 ```java
 import java.util.Scanner;
@@ -448,7 +448,7 @@ class Loan {
 }
 ```
 
-### Exercise 3
+#### Exercise 3
 
 Write a Java program to print a menu to the user asking to choose between by entering the corresponding option number:
 
@@ -457,10 +457,10 @@ Write a Java program to print a menu to the user asking to choose between by ent
 2. Rectangle
 ```
 
-If `1` (circle) is chosen, take the input of radius (int) and print the area of the circle (take pi = 3.14), otherwise take the input of length (int) and breadth (int) of rectangle and print the area.<br>
+If `1` (circle) is chosen, take the input of radius (int) and print the area of the circle (take pi = 3.14), otherwise take the input of length (int) and breadth (int) of rectangle and print the area.\
 Do this exercise with both if-else and switch statements.
 
-#### Solution
+**Solution**
 
 ```java
 import java.util.Scanner;
@@ -512,20 +512,20 @@ class Area {
 }}
 ```
 
-### Exercise 4
+#### Exercise 4
 
 Write a Java program to declare a 2D array of size 4 X 3, then take the input from user such that the array contains following elements:
 
-<pre>
+```
 12   3    4 
 4    34   2
 65   1   56
 76   24   7
-</pre>
+```
 
 After that, using for-each loop find the sum of the whole array and print it.
 
-#### Solution
+**Solution**
 
 ```java
 class Array {
