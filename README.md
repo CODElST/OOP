@@ -1,6 +1,6 @@
 # Lab1
 
-OOP Labsheet 1\
+OOP Labsheet 1
 
 
 
